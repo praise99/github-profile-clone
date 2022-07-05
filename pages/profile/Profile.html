@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="./profile.css" />
+  </head>
+  <body>
+    <div class="loading" id="loading">loading....</div>
+    <div id="content">
+      <nav class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title">
+            <img
+              src="../../assets/images/github.svg"
+              alt="github-logo"
+              class="logo"
+            />
+            <input
+              type="text"
+              class="github-control hide_none"
+              placeholder="Search or Jump to"
+            />
+            <div class="nav-linking hide_none">
+              <a href="//github.io/jo_geek" target="_blank">Pull requests</a>
+              <a href="http://stackoverflow.com/users/4084003/" target="_blank"
+                >Issues</a
+              >
+              <a
+                href="https://in.linkedin.com/in/jonesvinothjoseph"
+                target="_blank"
+                >Marketplace</a
+              >
+              <a href="https://codepen.io/jo_Geek/" target="_blank">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <img src="../../assets/images/bell.svg" alt="" class="mb bell_show" />
+
+        <div class="nav-links">
+          <div class="small_links nav-linking hiding">
+            <input
+              type="text"
+              class="github-control"
+              placeholder="Search or Jump to"
+            />
+            <a href="#" target="_blank">Pull requests</a>
+            <a href="#" target="_blank">Issues</a>
+            <a href="#" target="_blank">Marketplace</a>
+            <a href="#" target="_blank">Explore</a>
+            <a href="#" target="_blank" class="flex">
+              <img src="" alt="" id="logo_image" />
+              <p id="user_name"></p>
+            </a>
+          </div>
+
+          <img src="../../assets/images/bell.svg" alt="" class="hide_none" />
+          <div class="flex nav_icons hide_none">
+            <img src="../../assets/images/plus.svg" alt="plus" class="plus" />
+            <img
+              src="../../assets/images/caret-down.svg"
+              alt="down"
+              class="down"
+            />
+            <img src="" alt="" id="logo_img" />
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="side-information">
+          <div class="tab padding" id="tab_fixed">
+            <div class="flex name-none" id="name-fixed">
+              <img
+                src="https://avatars.githubusercontent.com/u/61688995?s=400&v=4"
+                alt=""
+                id="logo_image_active"
+              />
+              <p id="user_name_active">praise99</p>
+            </div>
+          </div>
+          <div class="side_image">
+            <a href="#" target="_blank" id="user_profile">
+              <img
+                src="https://avatars.githubusercontent.com/u/61688995?s=400&v=4"
+                alt="github"
+                class="image_github"
+                id="image_github"
+            /></a>
+
+            <div class="names">
+              <p class="short_name" id="short_name">praise</p>
+              <p class="user_name" id="user_name_data">praise99</p>
+            </div>
+          </div>
+          <div class="side_info">
+            <div class="side_info_name">
+              <div class="description">
+                <p class="profile_description" id="bio">
+                  I'm a young developer interested in exploring innovative
+                  techniques and utilizing data science skills with a focused
+                  interest in the petroleum industry .
+                </p>
+              </div>
+              <div class="edit">
+                <button class="btn btn-primary">Edit profile</button>
+              </div>
+              <div class="followers flex lg">
+                <div class="followers_image">
+                  <img src="../../assets/images/people.svg" alt="people" />
+                </div>
+                <div class="followers_number flex">
+                  <p class="follow_no">
+                    <span id="followers">3</span> followers
+                  </p>
+                </div>
+                <div class="followers_line">.</div>
+                <div class="followings_number">
+                  <p class="follow_no">
+                    <span id="following">3</span> following
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="side_details">
+            <div class="location flex" id="location"></div>
+            <div class="linkedin flex" id="blog"></div>
+            <div class="linkedin flex" id="twitter"></div>
+            <div class="followers flex mb">
+              <div class="followers_image">
+                <img src="../../assets/images/people.svg" alt="people" />
+              </div>
+              <div class="followers_number flex">
+                <p class="follow_no"><span id="followers">3</span> followers</p>
+              </div>
+              <div class="followers_line">.</div>
+              <div class="followings_number">
+                <p class="follow_no"><span id="following">3</span> following</p>
+              </div>
+            </div>
+            <div class="email flex" id="email"></div>
+          </div>
+        </div>
+        <div class="repository">
+          <div class="tab" id="tabs">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'Overview')"
+              id="defaultOpen"
+            >
+              <img
+                src="../../assets//images/book.svg"
+                alt="book"
+                class="img-link"
+              />
+              Overview
+            </button>
+
+            <button class="tablinks" onclick="openTab(event, 'Repository')">
+              <img
+                src="../../assets//images//repository.png"
+                alt="repository"
+                class="img-link"
+              />
+              Repository
+              <div id="repository_number"></div>
+            </button>
+          </div>
+          <div id="Overview" class="tabcontent">
+            <h2 class="popular_repository_title">Popular repositories</h2>
+            <div class="cards" id="repository_list"></div>
+            <a href="/index.html" class="back flex">
+              <img
+                src="../../assets//images//arrow-left.svg"
+                alt="arrow left"
+              />
+              <p class="back-title card_title_name">back to homepage</p>
+            </a>
+          </div>
+          <div id="Repository" class="tabcontent">
+            <div class="search_bar">
+              <input
+                type="search"
+                class="search_repository"
+                placeholder="Find a repository..."
+                id="searchValue"
+                onkeyup="searchRepositories();"
+              />
+            </div>
+            <div class="repository_cards" id="repository_cards"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./Profile.js"></script>
+    <script src="./Tabs.js"></script>
+  </body>
+</html>
